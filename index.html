@@ -1,0 +1,984 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>High Coco | Premium Coconut Charcoal Briquettes Manufacturer &amp; Exporter from Indonesia</title>
+<meta name="description" content="High Coco (Highcoco.id) is a trusted Indonesian manufacturer & exporter of premium coconut shell charcoal briquettes — Cube, Finger, Hexagonal & Half Moon — for shisha and BBQ markets in the Middle East, Europe, India, Iraq, Iran and Brazil. Long burning, low ash, no smoke, OEM & private label available.">
+<meta name="keywords" content="coconut charcoal briquettes, coconut briquette manufacturer Indonesia, shisha charcoal exporter, cube briquette, hexagonal briquette, finger briquette, half moon briquette, OEM charcoal briquette, private label shisha charcoal">
+<meta name="author" content="High Coco / Highcoco.id">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://highcoco.id/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="High Coco">
+<meta property="og:title" content="High Coco | Premium Coconut Charcoal Briquettes Manufacturer from Indonesia">
+<meta property="og:description" content="Sustainable. Consistent. Trusted Worldwide. Coconut shell charcoal briquettes exporter — Cube, Finger, Hexagonal, Half Moon.">
+<meta property="og:image" content="images/og-cover.jpg">
+<meta property="og:url" content="https://highcoco.id/">
+
+<!-- Favicon (inline SVG, no external file needed) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231F4D3A'/%3E%3Ccircle cx='50' cy='50' r='30' fill='%236B4226'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23C9A227'/%3E%3C/svg%3E">
+
+<!-- Structured Data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "High Coco",
+  "url": "https://highcoco.id",
+  "logo": "https://highcoco.id/images/logo.JPG.jpeg",
+  "description": "Premium coconut shell charcoal briquette manufacturer and exporter from Indonesia.",
+  "foundingDate": "2020",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "ID"
+  },
+  "sameAs": ["https://instagram.com/highcoco.id"]
+}
+</script>
+
+<!-- Leaflet (maps) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- Google Fonts: Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --hc-cream:#FAF7F0;
+  --hc-cream-dim:#F1ECE0;
+  --hc-green:#1F4D3A;
+  --hc-green-dark:#153328;
+  --hc-black:#6B4226;
+  --hc-black-dark:#4A2C18;
+  --hc-brown:#6B4226;
+  --hc-brown-dark:#4A2C18;
+  --hc-charcoal:#241B15;
+  --hc-gold:#C9A227;
+  --hc-sage:#E9EEE2;
+  --hc-white:#FFFFFF;
+  --radius-lg:22px;
+  --radius-md:14px;
+  --shadow-soft:0 20px 45px -20px rgba(36,27,21,.35);
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Poppins',sans-serif;
+  color:var(--hc-charcoal);
+  background:var(--hc-white);
+  overflow-x:hidden;
+}
+h1,h2,h3,h4,.display-font{font-family:'Poppins',sans-serif; font-weight:800; letter-spacing:-0.02em;}
+.eyebrow{
+  font-size:.72rem; font-weight:700; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--hc-gold);
+}
+a{text-decoration:none;}
+.btn{border-radius:100px; font-weight:600; padding:.75rem 1.7rem; transition:all .35s var(--ease);}
+.btn-hc-primary{background:var(--hc-green); color:#fff; border:1px solid var(--hc-green);}
+.btn-hc-primary:hover{background:var(--hc-green-dark); color:#fff; transform:translateY(-2px); box-shadow:0 12px 24px -10px rgba(31,77,58,.6);}
+.btn-hc-outline{background:transparent; color:#fff; border:1px solid rgba(255,255,255,.7);}
+.btn-hc-outline:hover{background:#fff; color:var(--hc-green-dark); transform:translateY(-2px);}
+.btn-hc-gold{background:var(--hc-gold); color:var(--hc-charcoal); border:1px solid var(--hc-gold); font-weight:700;}
+.btn-hc-gold:hover{background:#b38f20; color:#fff;}
+.section-pad{padding:6.5rem 0;}
+@media(max-width:768px){.section-pad{padding:3.6rem 0;}}
+.bg-sage{background:var(--hc-sage);}
+.bg-charcoal{background:var(--hc-charcoal); color:#f4efe6;}
+
+/* ===== NAVBAR ===== */
+#mainNav{
+  padding:.9rem 0; transition:all .35s var(--ease); background:rgba(250,247,240,0);
+}
+#mainNav.scrolled{background:rgba(250,247,240,.96); backdrop-filter:blur(10px); box-shadow:0 8px 24px -12px rgba(36,27,21,.25);}
+#mainNav .navbar-brand{font-weight:800; font-size:1.35rem; color:var(--hc-green-dark); display:flex; align-items:center; gap:.55rem;}
+#mainNav .navbar-brand .home-ico{
+  width:36px; height:36px; border-radius:50%; background:var(--hc-green); display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.05rem;
+  animation:homePulse 3.2s ease-in-out infinite;
+}
+#mainNav .navbar-brand img.logo{height:38px; width:auto;}
+@keyframes homePulse{0%,100%{box-shadow:0 0 0 0 rgba(31,77,58,.45);}50%{box-shadow:0 0 0 8px rgba(31,77,58,0);}}
+#mainNav .nav-link{font-weight:500; color:var(--hc-charcoal)!important; margin:0 .35rem; position:relative;}
+#mainNav.scrolled .nav-link, #mainNav:not(.scrolled) .nav-link{color:inherit;}
+#mainNav:not(.scrolled) .nav-link{color:#fff!important;}
+#mainNav.scrolled .navbar-brand{color:var(--hc-green-dark);}
+#mainNav:not(.scrolled) .navbar-brand{color:#fff;}
+#mainNav .nav-link::after{
+  content:""; position:absolute; left:.75rem; right:.75rem; bottom:2px; height:2px; background:var(--hc-gold);
+  transform:scaleX(0); transform-origin:left; transition:transform .3s var(--ease);
+}
+#mainNav .nav-link:hover::after{transform:scaleX(1);}
+#mainNav .navbar-toggler{border:none; color:#fff;}
+#mainNav:not(.scrolled) .navbar-toggler-icon{filter:invert(1);}
+
+/* ===== HERO ===== */
+.hero{
+  position:relative; min-height:100vh; display:flex; align-items:center;
+  background:#000000;
+  overflow:hidden;
+}
+.hero video, .hero .hero-fallback-img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;
+}
+.hero::before{
+  content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.8) 45%, rgba(0,0,0,.95) 100%);
+}
+.hero .container{position:relative; z-index:2; padding-top:40px;}
+.hero-eyebrow{color:var(--hc-gold); letter-spacing:.3em; font-size:.75rem; font-weight:700; text-transform:uppercase; margin-top:56px;}
+.hero h1{
+  color:#fff; font-size:clamp(2.1rem,5vw,3.8rem); line-height:1.08; margin-top:3rem; max-width:900px;
+}
+.hero h1 .accent{color:var(--hc-gold);}
+.hero p.lead{color:#e7e2d4; font-size:1.15rem; max-width:640px; margin-top:1.1rem; font-weight:300;}
+.hero .hero-cta{margin-top:2.2rem; display:flex; gap:1rem; flex-wrap:wrap;}
+.hero-stats{
+  margin-top:2.4rem; display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem;
+  border-top:1px solid rgba(255,255,255,.18); padding-top:2.2rem;
+}
+@media(max-width:768px){.hero-stats{grid-template-columns:repeat(2,1fr);} }
+.hero-stat .num{font-size:1.9rem; font-weight:800; color:#fff;}
+.hero-stat .label{font-size:.78rem; color:#cfd9d1; text-transform:uppercase; letter-spacing:.08em;}
+.scroll-cue{position:absolute; bottom:26px; left:50%; transform:translateX(-50%); z-index:2; color:#fff; opacity:.75; font-size:1.4rem; animation:bounceDown 1.9s infinite;}
+@keyframes bounceDown{0%,100%{transform:translate(-50%,0);}50%{transform:translate(-50%,10px);}}
+
+/* offline / signal lost banner */
+#signalBanner{
+  position:fixed; top:0; left:0; right:0; z-index:2000; background:var(--hc-charcoal); color:#f4efe6;
+  padding:.6rem 1rem; text-align:center; font-size:.85rem; display:none; align-items:center; justify-content:center; gap:.6rem;
+}
+#signalBanner .bars{display:flex; align-items:flex-end; gap:3px; height:16px;}
+#signalBanner .bars span{width:4px; background:var(--hc-gold); display:block; animation:barLoad 1s infinite ease-in-out;}
+#signalBanner .bars span:nth-child(1){height:5px; animation-delay:0s;}
+#signalBanner .bars span:nth-child(2){height:9px; animation-delay:.15s;}
+#signalBanner .bars span:nth-child(3){height:13px; animation-delay:.3s;}
+#signalBanner .bars span:nth-child(4){height:16px; animation-delay:.45s;}
+@keyframes barLoad{0%,100%{opacity:.35; transform:scaleY(.6);}50%{opacity:1; transform:scaleY(1);}}
+body.offline #signalBanner{display:flex;}
+body.offline #mainNav{margin-top:38px;}
+
+/* reveal on scroll */
+.reveal{opacity:0; transform:translateY(28px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+.reveal.is-visible{opacity:1; transform:translateY(0);}
+
+/* section headers */
+.sec-head{max-width:720px; margin-bottom:3rem;}
+.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem); color:var(--hc-green-dark); margin-top:.5rem;}
+.sec-head p{color:#5b5147; font-weight:300; font-size:1.05rem;}
+
+/* ===== ABOUT ===== */
+.about-photo-wrap{position:relative; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-soft);}
+.about-photo-wrap img{width:100%; height:100%; object-fit:cover; display:block; min-height:380px;}
+.about-badge{
+  position:absolute; bottom:-1px; right:-1px; background:var(--hc-green); color:#fff; padding:1.1rem 1.4rem;
+  border-radius:var(--radius-lg) 0 0 0; text-align:center;
+}
+.about-badge .n{font-size:1.8rem; font-weight:800;}
+.about-badge .t{font-size:.7rem; text-transform:uppercase; letter-spacing:.08em;}
+
+.timeline-v{position:relative; margin-top:1rem; padding-left:2.2rem; border-left:2px solid #d9cdb8;}
+.timeline-v .t-item{position:relative; padding-bottom:1.9rem;}
+.timeline-v .t-item:last-child{padding-bottom:0;}
+.timeline-v .t-item::before{
+  content:""; position:absolute; left:-2.42rem; top:2px; width:14px; height:14px; border-radius:50%;
+  background:var(--hc-gold); border:3px solid var(--hc-cream); box-shadow:0 0 0 2px var(--hc-green);
+}
+.timeline-v .t-year{font-weight:700; color:var(--hc-green-dark);}
+.timeline-v .t-text{color:#5b5147; font-size:.95rem;}
+
+/* ===== PRODUCTS ===== */
+.product-card{
+  border-radius:var(--radius-lg); overflow:hidden; background:#fff; box-shadow:var(--shadow-soft);
+  cursor:pointer; transition:transform .4s var(--ease), box-shadow .4s var(--ease); height:100%;
+  border:1px solid #eee3cf;
+}
+.product-card:hover{transform:translateY(-10px); box-shadow:0 30px 55px -20px rgba(36,27,21,.4);}
+.product-card .p-img{height:230px; overflow:hidden; position:relative;}
+.product-card .p-img img{width:100%; height:100%; object-fit:cover; transition:transform .6s var(--ease);}
+.product-card:hover .p-img img{transform:scale(1.08);}
+.product-card .p-tag{position:absolute; top:14px; left:14px; background:var(--hc-gold); color:var(--hc-charcoal); font-size:.7rem; font-weight:700; padding:.3rem .7rem; border-radius:100px; text-transform:uppercase; letter-spacing:.05em;}
+.product-card .p-body{padding:1.4rem 1.5rem 1.6rem;}
+.product-card h3{font-size:1.25rem; color:var(--hc-green-dark);}
+.product-card .p-more{font-size:.85rem; font-weight:600; color:var(--hc-brown); display:flex; align-items:center; gap:.4rem;}
+
+/* ===== WHY CHOOSE US ===== */
+.why-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1.4rem;}
+@media(max-width:992px){.why-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:576px){.why-grid{grid-template-columns:1fr;}}
+.why-card{
+  background:#fff; border-radius:var(--radius-md); padding:1.6rem 1.4rem; text-align:left; border:1px solid #eee3cf;
+  transition:all .35s var(--ease);
+}
+.why-card:hover{border-color:var(--hc-gold); transform:translateY(-6px); box-shadow:0 18px 30px -18px rgba(36,27,21,.3);}
+.why-card .ico{
+  width:50px; height:50px; border-radius:50%; background:var(--hc-sage); color:var(--hc-green); display:flex; align-items:center; justify-content:center; font-size:1.3rem; margin-bottom:1rem;
+}
+.why-card h4{font-size:1.02rem; margin-bottom:.3rem; color:var(--hc-green-dark);}
+.why-card p{font-size:.85rem; color:#6b6155; margin:0;}
+
+/* ===== PRODUCTION PROCESS - ember timeline (signature element) ===== */
+.process-wrap{background:var(--hc-charcoal); border-radius:var(--radius-lg); padding:3.5rem 2rem;}
+.ember-line{
+  position:relative; margin:0 auto; max-width:1100px;
+}
+.ember-track{
+  position:relative; height:4px; background:#3a2c22; border-radius:4px; margin:0 auto 3.2rem; overflow:hidden;
+}
+.ember-progress{
+  position:absolute; left:0; top:0; height:100%; width:0%; background:linear-gradient(90deg,var(--hc-brown),var(--hc-gold));
+  border-radius:4px; transition:width 1.6s var(--ease);
+}
+.process-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1.6rem;}
+@media(max-width:992px){.process-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:576px){.process-grid{grid-template-columns:1fr;}}
+.process-step{
+  background:#2c221a; border:1px solid #43352a; border-radius:var(--radius-md); padding:1.1rem; text-align:center; opacity:.5;
+  transition:all .5s var(--ease);
+}
+.process-step.lit{opacity:1; border-color:var(--hc-gold); box-shadow:0 0 25px -6px rgba(201,162,39,.45);}
+.process-step .num{
+  width:34px; height:34px; margin:0 auto .7rem; border-radius:50%; background:#3a2c22; color:var(--hc-gold); font-weight:700; font-size:.85rem;
+  display:flex; align-items:center; justify-content:center; border:1px solid #55432f;
+}
+.process-step.lit .num{background:var(--hc-gold); color:var(--hc-charcoal);}
+.process-step .p-photo{width:100%; height:110px; object-fit:cover; border-radius:8px; margin-bottom:.7rem; background:#3a2c22;}
+.process-step h5{color:#f4efe6; font-size:.95rem; margin-bottom:.2rem;}
+.process-step p{color:#b7ab9c; font-size:.78rem; margin:0;}
+
+/* ===== GALLERY ===== */
+.gallery-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:.9rem;}
+@media(max-width:992px){.gallery-grid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:576px){.gallery-grid{grid-template-columns:repeat(2,1fr);}}
+.gallery-item{border-radius:var(--radius-md); overflow:hidden; cursor:pointer; position:relative; aspect-ratio:1/1;}
+.gallery-item img{width:100%; height:100%; object-fit:cover; transition:transform .5s var(--ease);}
+.gallery-item:hover img{transform:scale(1.12);}
+.gallery-item::after{content:"\f52a"; font-family:"bootstrap-icons"; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.4rem; background:rgba(31,77,58,0); opacity:0; transition:all .35s;}
+.gallery-item:hover::after{opacity:1; background:rgba(31,77,58,.35);}
+#lightboxOverlay{
+  position:fixed; inset:0; background:rgba(15,15,12,.94); z-index:3000; display:none; align-items:center; justify-content:center; padding:2rem;
+}
+#lightboxOverlay img{max-width:92%; max-height:88vh; border-radius:10px; box-shadow:0 30px 80px rgba(0,0,0,.5);}
+#lightboxOverlay .lb-close{position:absolute; top:22px; right:28px; color:#fff; font-size:2rem; cursor:pointer;}
+
+/* ===== EXPORT MARKETS ===== */
+.market-map{position:relative; border-radius:var(--radius-lg); overflow:hidden; background:var(--hc-sage); padding:2rem;}
+.market-map img{width:100%; border-radius:var(--radius-md); opacity:.9; filter:sepia(.15) saturate(1.1);}
+.market-list{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1.6rem;}
+@media(max-width:768px){.market-list{grid-template-columns:repeat(2,1fr);}}
+.market-chip{
+  background:#fff; border:1px solid #e0d6c2; border-radius:100px; padding:.7rem 1rem; display:flex; align-items:center; gap:.6rem;
+  font-weight:600; font-size:.9rem; color:var(--hc-green-dark); position:relative; overflow:hidden;
+}
+.market-chip .flag{font-size:1.3rem;}
+.market-chip::before{
+  content:""; position:absolute; left:10px; top:50%; width:8px; height:8px; border-radius:50%; background:var(--hc-gold); transform:translateY(-50%); opacity:0;
+}
+.market-chip.glow{box-shadow:0 0 0 2px var(--hc-gold) inset; animation:chipGlow 2.4s infinite;}
+@keyframes chipGlow{0%,100%{box-shadow:0 0 0 2px var(--hc-gold) inset;}50%{box-shadow:0 0 14px 2px rgba(201,162,39,.5) inset;}}
+
+/* ===== CERTIFICATES ===== */
+.cert-card{background:#fff; border:1px dashed #d9cdb8; border-radius:var(--radius-md); padding:1.4rem; text-align:center;}
+.cert-card .cert-ico{font-size:2rem; color:var(--hc-brown); margin-bottom:.6rem;}
+.cert-card h5{font-size:.95rem; color:var(--hc-green-dark);}
+.cert-card small{color:#8a7f70;}
+
+/* ===== CONTACT ===== */
+.contact-card{background:#fff; border-radius:var(--radius-md); padding:1.4rem 1.5rem; border:1px solid #eee3cf; height:100%;}
+.contact-card .ico{width:44px; height:44px; border-radius:50%; background:var(--hc-green); color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.1rem; margin-bottom:.8rem;}
+.form-hc .form-control, .form-hc .form-select{
+  border-radius:10px; border:1px solid #ddd0ba; padding:.7rem .9rem; background:#fff;
+}
+.form-hc .form-control:focus, .form-hc .form-select:focus{border-color:var(--hc-green); box-shadow:0 0 0 .2rem rgba(31,77,58,.15);}
+.map-embed{border-radius:var(--radius-md); overflow:hidden; border:1px solid #eee3cf;}
+#map{z-index:0;}
+
+/* ===== FOOTER ===== */
+footer.hc-footer{background:var(--hc-green-dark); color:#dfe6de; padding:3.6rem 0 1.4rem;}
+footer.hc-footer h6{color:#fff; font-weight:700; letter-spacing:.05em; text-transform:uppercase; font-size:.82rem; margin-bottom:1rem;}
+footer.hc-footer a{color:#c8d2c5; display:block; margin-bottom:.55rem; font-size:.92rem; transition:color .25s;}
+footer.hc-footer a:hover{color:var(--hc-gold);}
+footer.hc-footer .foot-brand{font-size:1.3rem; font-weight:800; color:#fff;}
+.social-round{width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,.08); display:inline-flex; align-items:center; justify-content:center; color:#fff; margin-right:.5rem; transition:.25s;}
+.social-round:hover{background:var(--hc-gold); color:var(--hc-charcoal);}
+
+/* ===== FLOATING WHATSAPP ===== */
+.wa-float{
+  position:fixed; right:22px; bottom:22px; z-index:1500; width:60px; height:60px; border-radius:50%;
+  background:#25D366; color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.7rem;
+  box-shadow:0 12px 28px -8px rgba(0,0,0,.45); animation:waFloat 2.6s ease-in-out infinite;
+}
+.wa-float:hover{color:#fff; transform:scale(1.06);}
+@keyframes waFloat{0%,100%{box-shadow:0 12px 28px -8px rgba(0,0,0,.45),0 0 0 0 rgba(37,211,102,.5);}50%{box-shadow:0 12px 28px -8px rgba(0,0,0,.45),0 0 0 10px rgba(37,211,102,0);}}
+.wa-quote-pop{
+  position:fixed; right:22px; bottom:94px; z-index:1499; background:#fff; border-radius:14px; box-shadow:var(--shadow-soft);
+  padding:1rem 1.1rem; width:250px; display:none; border:1px solid #eee3cf;
+}
+.wa-quote-pop.show{display:block; animation:popIn .3s var(--ease);}
+@keyframes popIn{from{opacity:0; transform:translateY(10px);}to{opacity:1; transform:translateY(0);}}
+.wa-quote-pop p{font-size:.82rem; color:#5b5147; margin-bottom:.7rem;}
+.wa-quote-pop .btn-hc-primary{color:#fff;}
+
+/* modal product detail */
+.modal-content.hc-modal{border-radius:20px; overflow:hidden; border:none;}
+.modal-content.hc-modal .modal-header{background:var(--hc-green); color:#fff; border:none;}
+.modal-content.hc-modal .btn-close{filter:invert(1);}
+
+::selection{background:var(--hc-gold); color:#241B15;}
+</style>
+</head>
+<body>
+
+<!-- Offline / signal lost banner -->
+<div id="signalBanner">
+  <div class="bars"><span></span><span></span><span></span><span></span></div>
+  <span>Signal lost — reconnecting… your data is saved locally.</span>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <img src="images/logo.JPG.jpeg" alt="High Coco" class="logo"
+           onerror="this.style.display='none';">
+      High Coco
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#founder">Founder</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#process">Production</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#markets">Export Markets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-hc-gold btn-sm px-3" href="#quotation">Request Quotation</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <img class="hero-fallback-img" src="images/hero-production.jpg" alt="High Coco coconut charcoal briquette factory production line in Indonesia"
+       onerror="this.style.background='#000'; this.removeAttribute('src');">
+  <!-- Replace with a <video> tag if you have production footage:
+  <video autoplay muted loop playsinline poster="images/hero-poster.jpg"><source src="videos/hero.mp4" type="video/mp4"></video> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="hero-eyebrow reveal" style="margin-top: 30px;">Manufacturer &amp; Exporter — Indonesia</div>
+        <h1 class="reveal">Premium <span class="accent">Coconut Charcoal Briquettes</span> Manufacturer From Indonesia</h1>
+        <p class="lead reveal">Sustainable. Consistent. Trusted Worldwide.</p>
+        <div class="hero-cta reveal">
+          <a href="#quotation" class="btn btn-hc-gold btn-lg"><i class="bi bi-send-fill me-2"></i>Request Quotation</a>
+          <a href="catalog/High-Coco-Catalog.pdf" download class="btn btn-hc-outline btn-lg"><i class="bi bi-download me-2"></i>Download Catalog</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="hero-stat"><div class="num">2020</div><div class="label">Founded</div></div>
+          <div class="hero-stat"><div class="num">150 MT</div><div class="label">Production / Month</div></div>
+          <div class="hero-stat"><div class="num">5+ Yrs</div><div class="label">Export Experience</div></div>
+          <div class="hero-stat"><div class="num">40FT</div><div class="label">Container MOQ</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><i class="bi bi-chevron-down"></i></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section-pad" id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal">
+        <div class="about-photo-wrap">
+          <img src="images/factory.JPG.jpeg" alt="High Coco factory in Indonesia"
+               onerror="this.onerror=null;this.src='https://placehold.co/700x520/1F4D3A/f4efe6?text=Factory+Photo';">
+          <div class="about-badge"><div class="n">100%</div><div class="t">Coconut Shell</div></div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal">
+        <div class="eyebrow">About High Coco</div>
+        <h2 class="sec-head" style="margin-bottom:1rem;">Indonesian craftsmanship, built for global export standards</h2>
+        <p style="color:#5b5147; font-size:1.02rem;">High Coco was founded in 2020 with a single purpose: turning Indonesia's abundant coconut shell waste into a clean-burning, export-grade energy product. From our factory floor to the final container seal, every batch is produced under consistent process control so buyers in the Middle East, Europe and beyond receive the same quality, shipment after shipment.</p>
+        <div class="timeline-v">
+          <div class="t-item"><div class="t-year">2020 — Founded</div><div class="t-text">High Coco established with a dedicated coconut shell charcoal processing line.</div></div>
+          <div class="t-item"><div class="t-year">Factory</div><div class="t-text">Purpose-built carbonization and hydraulic pressing facility with in-house QC lab.</div></div>
+          <div class="t-item"><div class="t-year">Quality</div><div class="t-text">Long burning time, low ash content, no smoke — tested on every production batch.</div></div>
+          <div class="t-item"><div class="t-year">Commitment</div><div class="t-text">Stable supply of 150 MT/month with full export documentation support.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAN BEHIND THE BUSINESS ============ -->
+<section class="section-pad bg-sage" id="founder">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-4 reveal">
+        <div class="about-photo-wrap" style="max-width:340px; margin:0 auto;">
+          <img src="images/founder.JPG.jpeg" alt="Samuel Hanjaya Putra (David), Owner of High Coco"
+               onerror="this.onerror=null;this.src='https://placehold.co/500x600/1F4D3A/f4efe6?text=David';">
+        </div>
+      </div>
+      <div class="col-lg-8 reveal">
+        <div class="eyebrow">Man Behind The Business</div>
+        <h2 class="sec-head" style="margin-bottom:.3rem;">Samuel Hanjaya Putra <span style="color:var(--hc-gold);">(David)</span></h2>
+        <p class="eyebrow" style="color:var(--hc-brown); letter-spacing:.12em; margin-bottom:1rem;">Owner of High Coco</p>
+        <p style="color:#5b5147; font-size:1.02rem;">Leading High Coco's mission to bring premium, export-grade coconut charcoal briquettes from Indonesia to buyers around the world — built on consistency, trust, and hands-on quality control from the factory floor to every sealed container.</p>
+        <a href="https://wa.me/628978781122?text=Hi%20David" target="_blank" rel="noopener" class="btn btn-hc-primary mt-2">
+          <i class="bi bi-whatsapp me-2"></i>Get In Touch
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="section-pad bg-sage" id="products">
+  <div class="container">
+    <div class="sec-head reveal mx-auto text-center">
+      <div class="eyebrow text-center">Our Products</div>
+      <h2>Four premium briquette shapes, one consistent quality</h2>
+      <p class="mx-auto">Every shape is engineered for a specific burning behaviour, shisha session length, and packing efficiency preferred by different markets.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="product-card" data-bs-toggle="modal" data-bs-target="#productModal" data-product="cube">
+          <div class="p-img"><span class="p-tag">Best Seller</span>
+            <img src="images/cubebriket.JPG.PNG" alt="Cube coconut charcoal briquette" onerror="this.onerror=null;this.src='https://placehold.co/500x400/6B4226/f4efe6?text=Cube+Briquette';"></div>
+          <div class="p-body"><h3>Cube Briquettes</h3><p class="text-muted small mb-2">25mm / 26mm / 22mm sizes for shisha &amp; BBQ.</p><span class="p-more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="product-card" data-bs-toggle="modal" data-bs-target="#productModal" data-product="finger">
+          <div class="p-img"><span class="p-tag">Long Burn</span>
+            <img src="images/finger.JPG.PNG" alt="Finger coconut charcoal briquette" onerror="this.onerror=null;this.src='https://placehold.co/500x400/6B4226/f4efe6?text=Finger+Briquette';"></div>
+          <div class="p-body"><h3>Finger Briquettes</h3><p class="text-muted small mb-2">Elongated shape, extended burning duration.</p><span class="p-more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="product-card" data-bs-toggle="modal" data-bs-target="#productModal" data-product="hex">
+          <div class="p-img"><span class="p-tag">Popular ME</span>
+            <img src="images/hexagonal.JPG.JPG" alt="Hexagonal coconut charcoal briquette" onerror="this.onerror=null;this.src='https://placehold.co/500x400/6B4226/f4efe6?text=Hexagonal+Briquette';"></div>
+          <div class="p-body"><h3>Hexagonal Briquettes</h3><p class="text-muted small mb-2">Tight packing, minimal gaps, efficient logistics.</p><span class="p-more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="product-card" data-bs-toggle="modal" data-bs-target="#productModal" data-product="halfmoon">
+          <div class="p-img"><span class="p-tag">Compact</span>
+            <img src="images/halfmoon.JPG.PNG" alt="Half moon coconut charcoal briquette" onerror="this.onerror=null;this.src='https://placehold.co/500x400/6B4226/f4efe6?text=Half+Moon+Briquette';"></div>
+          <div class="p-body"><h3>Half Moon Briquettes</h3><p class="text-muted small mb-2">Compact half-moon cut, fast ignition.</p><span class="p-more">View details <i class="bi bi-arrow-right"></i></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5 reveal">
+      <a href="catalog/High-Coco-Catalog.pdf" download class="btn btn-hc-primary"><i class="bi bi-download me-2"></i>Download Full Catalog (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<!-- Product detail modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content hc-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pm-title">Product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-5">
+            <img id="pm-img" src="" alt="" class="img-fluid rounded-3">
+          </div>
+          <div class="col-md-7">
+            <p id="pm-desc" class="text-muted"></p>
+            <ul id="pm-specs" class="list-unstyled small"></ul>
+            <a href="#quotation" data-bs-dismiss="modal" class="btn btn-hc-primary mt-2">Request Quotation for this Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="section-pad" id="why">
+  <div class="container">
+    <div class="sec-head reveal mx-auto text-center">
+      <div class="eyebrow text-center">Why Choose Us</div>
+      <h2>Export-grade quality, backed by real production discipline</h2>
+    </div>
+    <div class="why-grid reveal">
+      <div class="why-card"><div class="ico"><i class="bi bi-tree-fill"></i></div><h4>Premium Coconut Shell</h4><p>Sourced from selected, mature coconut shells only.</p></div>
+      <div class="why-card"><div class="ico"><i class="bi bi-fire"></i></div><h4>Long Burning</h4><p>Engineered density for extended, steady heat.</p></div>
+      <div class="why-card"><div class="ico"><i class="bi bi-droplet-half"></i></div><h4>Low Ash</h4><p>Minimal ash residue after full combustion.</p></div>
+      <div class="why-card"><div class="ico"><i class="bi bi-cloud-slash"></i></div><h4>No Smoke</h4><p>Clean burn suited for indoor lounge use.</p></div>
+      <div class="why-card"><div class="ico"><i class="bi bi-gear-wide-connected"></i></div><h4>OEM Service</h4><p>Custom size, shape and packing specification.</p></div>
+      <div class="why-card"><div class="ico"><i class="bi bi-tags-fill"></i></div><h4>Private Label</h4><p>Your brand on every box and master carton.</p></div>
+      <div class="why-card"><div class="ico"><i class="bi bi-file-earmark-check-fill"></i></div><h4>Export Documentation</h4><p>Complete COA, SHT, FA, MSDS &amp; NIB legality.</p></div>
+      <div class="why-card"><div class="ico"><i class="bi bi-graph-up-arrow"></i></div><h4>Stable Quality</h4><p>Consistent specification across every shipment.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTION PROCESS ============ -->
+<section class="section-pad bg-charcoal" id="process">
+  <div class="container">
+    <div class="sec-head reveal mx-auto text-center" style="max-width:760px;">
+      <div class="eyebrow text-center">Production Process</div>
+      <h2 style="color:#fff;">From raw coconut shell to sealed export container</h2>
+      <p style="color:#b7ab9c;">Scroll to watch each stage light up — the same nine steps every batch goes through before it reaches your port.</p>
+    </div>
+    <div class="process-wrap reveal">
+      <div class="ember-line">
+        <div class="ember-track"><div class="ember-progress" id="emberProgress"></div></div>
+        <div class="process-grid" id="processGrid">
+          <div class="process-step" data-step="1"><div class="num">01</div><img class="p-photo" src="images/Material.JPG.jpg" alt="Raw coconut shell material" onerror="this.onerror=null;this.src='https://placehold.co/300x160/2c221a/C9A227?text=Raw+Material';"><h5>Raw Material</h5><p>Selected coconut shells received &amp; sorted.</p></div>
+          <div class="process-step" data-step="2"><div class="num">02</div><img class="p-photo" src="images/carbonisasi.JPG.PNG" alt="Carbonization" onerror="this.onerror=null;this.src='https://placehold.co/300x160/2c221a/C9A227?text=Carbonization';"><h5>Carbonization</h5><p>Shells carbonized into raw charcoal.</p></div>
+          <div class="process-step" data-step="3"><div class="num">03</div><img class="p-photo" src="images/crusher.JPG.jpeg" alt="Crushing" onerror="this.onerror=null;this.src='https://placehold.co/300x160/2c221a/C9A227?text=Crushing';"><h5>Crushing</h5><p>Charcoal crushed into fine powder.</p></div>
+          <div class="process-step" data-step="4"><div class="num">04</div><img class="p-photo" src="images/mixing.JPG.jpeg" alt="Mixing / blending" onerror="this.onerror=null;this.src='https://placehold.co/300x160/2c221a/C9A227?text=Mixing';"><h5>Mixing</h5><p>Powder blended with natural binder.</p></div>
+          <div class="process-step" data-step="5"><div class="num">05</div><img class="p-photo" src="images/hydraulicpres.JPG.jpeg" alt="Hydraulic press molding" onerror="this.onerror=null;this.src='https://placehold.co/300x160/2c221a/C9A227?text=Hydraulic+Press';"><h5>Hydraulic Press</h5><p>Pressed into cube, finger, hex &amp; half moon.</p></div>
+          <div class="process-step" data-step="6"><div class="num">06</div><img class="p-photo" src="images/drying.JPG.jpeg" alt="Drying" onerror="this.onerror=null;this.src='https://placehold.co/300x160/2c221a/C9A227?text=Drying';"><h5>Drying</h5><p>Oven-dried to precise moisture level.</p></div>
+          <div class="process-step" data-step="7"><div class="num">07</div><img class="p-photo" src="images/QCcontrol.JPG.PNG" alt="Quality control" onerror="this.onerror=null;this.src='https://placehold.co/300x160/2c221a/C9A227?text=QC';"><h5>QC</h5><p>Lab-tested for ash, burn time &amp; density.</p></div>
+          <div class="process-step" data-step="8"><div class="num">08</div><img class="p-photo" src="images/packing.JPG.jpeg" alt="Packing" onerror="this.onerror=null;this.src='https://placehold.co/300x160/2c221a/C9A227?text=Packing';"><h5>Packing</h5><p>Sealed into export cartons &amp; labelled.</p></div>
+          <div class="process-step" data-step="9"><div class="num">09</div><img class="p-photo" src="images/stuffing iran.JPG.jpeg" alt="Container stuffing" onerror="this.onerror=null;this.src='https://placehold.co/300x160/2c221a/C9A227?text=Stuffing+Container';"><h5>Stuffing Container</h5><p>Loaded &amp; sealed for shipment worldwide.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section-pad" id="gallery">
+  <div class="container">
+    <div class="sec-head reveal mx-auto text-center">
+      <div class="eyebrow text-center">Factory Gallery</div>
+      <h2>Inside the High Coco production floor</h2>
+    </div>
+    <div class="gallery-grid reveal" id="galleryGrid">
+      <!-- Reuses the 8 production photos + factory front; replace src as needed -->
+    </div>
+  </div>
+</section>
+
+<div id="lightboxOverlay"><span class="lb-close" id="lbClose">&times;</span><img id="lbImg" src="" alt="Gallery photo full view"></div>
+
+<!-- ============ EXPORT MARKETS ============ -->
+<section class="section-pad bg-sage" id="markets">
+  <div class="container">
+    <div class="sec-head reveal mx-auto text-center">
+      <div class="eyebrow text-center">Export Markets</div>
+      <h2>Trusted by buyers across the Middle East, Europe &amp; beyond</h2>
+    </div>
+    <div class="row g-4 align-items-center reveal">
+      <div class="col-lg-7">
+        <div class="market-map">
+          <img src="images/worldmaps.JPG.png" alt="World map showing High Coco export destination countries"
+               onerror="this.onerror=null;this.src='https://placehold.co/900x480/E9EEE2/1F4D3A?text=World+Export+Map';">
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="market-list">
+          <div class="market-chip glow"><span class="flag">🇱🇧</span> Lebanon</div>
+          <div class="market-chip glow"><span class="flag">🇮🇳</span> India</div>
+          <div class="market-chip glow"><span class="flag">🇮🇶</span> Iraq</div>
+          <div class="market-chip glow"><span class="flag">🇮🇷</span> Iran</div>
+          <div class="market-chip glow"><span class="flag">🇧🇷</span> Brazil</div>
+          <div class="market-chip glow"><span class="flag">🇩🇪</span> Germany</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES / LEGALITY ============ -->
+<section class="section-pad" id="certificates">
+  <div class="container">
+    <div class="sec-head reveal mx-auto text-center">
+      <div class="eyebrow text-center">Legality &amp; Certificates</div>
+      <h2>Full documentation for smooth customs clearance</h2>
+      <p class="mx-auto">Additional certificate images (COA, SHT, FA, MSDS) can simply be dropped into the <code>/images</code> folder using the same filenames.</p>
+    </div>
+    <div class="row g-4 reveal">
+      <div class="col-6 col-md-3">
+        <div class="cert-card"><div class="cert-ico"><i class="bi bi-file-earmark-medical"></i></div><h5>COA</h5><small>Certificate of Analysis — coming soon</small></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="cert-card"><div class="cert-ico"><i class="bi bi-file-earmark-spreadsheet"></i></div><h5>SHT</h5><small>Sertifikat Hasil Uji — coming soon</small></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="cert-card"><div class="cert-ico"><i class="bi bi-file-earmark-check"></i></div><h5>FA</h5><small>Fumigation / Analysis Cert — coming soon</small></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="cert-card"><div class="cert-ico"><i class="bi bi-file-earmark-lock"></i></div><h5>MSDS</h5><small>Material Safety Data Sheet — coming soon</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section-pad bg-sage" id="contact">
+  <div class="container">
+    <div class="sec-head reveal mx-auto text-center">
+      <div class="eyebrow text-center">Contact</div>
+      <h2>Let's talk about your next shipment</h2>
+    </div>
+    <div class="row g-4 reveal">
+      <div class="col-md-3 col-6">
+        <div class="contact-card">
+          <div class="ico"><i class="bi bi-whatsapp"></i></div>
+          <h6>WhatsApp</h6>
+          <a href="https://wa.me/628978781122" target="_blank" rel="noopener">+62 897-8781-122</a>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="contact-card">
+          <div class="ico"><i class="bi bi-envelope-fill"></i></div>
+          <h6>Email</h6>
+          <a href="mailto:export@highcoco.id">infohighcoco.id@gmail.com</a>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="contact-card">
+          <div class="ico"><i class="bi bi-instagram"></i></div>
+          <h6>Instagram</h6>
+          <a href="https://instagram.com/highcoco.id" target="_blank" rel="noopener">@highcoco.id</a>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="contact-card">
+          <div class="ico"><i class="bi bi-geo-alt-fill"></i></div>
+          <h6>Address</h6>
+          <span class="text-muted small">Jl.DK.PONGAN RT 04 / 05 PONDOK, GROGOL - SUKOHARJO, Central Java, Indonesia</span>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4 reveal">
+      <div class="col-12">
+        <div class="map-embed">
+          <div id="map" style="width:100%; height:320px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REQUEST QUOTATION ============ -->
+<section class="section-pad" id="quotation">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5 reveal">
+        <div class="eyebrow">Request Quotation</div>
+        <h2 class="sec-head" style="margin-bottom:1rem;">Get your latest price list &amp; MOQ terms</h2>
+        <p style="color:#5b5147;">Fill in the form and our export team will reply with pricing, MOQ (40FT container), lead time and shipping terms tailored to your destination port. Your last entry is saved automatically on this device so you never lose your draft.</p>
+        <ul class="list-unstyled" style="color:#5b5147; font-size:.92rem;">
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Reply within 1–2 business days</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>FOB quotation available</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>OEM &amp; private label options</li>
+        </ul>
+      </div>
+      <div class="col-lg-7 reveal">
+        <form class="form-hc bg-white p-4 p-md-5 rounded-4 shadow-sm" id="quoteForm"
+              action="https://formsubmit.co/export@highcoco.id" method="POST">
+          <input type="hidden" name="_subject" value="New Quotation Request — High Coco Website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label small fw-semibold">Full Name</label>
+              <input type="text" name="name" id="q-name" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small fw-semibold">Company</label>
+              <input type="text" name="company" id="q-company" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small fw-semibold">Email</label>
+              <input type="email" name="email" id="q-email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small fw-semibold">WhatsApp / Phone</label>
+              <input type="text" name="phone" id="q-phone" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small fw-semibold">Country</label>
+              <input type="text" name="country" id="q-country" class="form-control" placeholder="e.g. Germany, Iraq, Lebanon">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small fw-semibold">Product Interested</label>
+              <select name="product" id="q-product" class="form-select">
+                <option>Cube Briquettes</option>
+                <option>Finger Briquettes</option>
+                <option>Hexagonal Briquettes</option>
+                <option>Half Moon Briquettes</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label small fw-semibold">Order Quantity / Notes</label>
+              <textarea name="message" id="q-message" class="form-control" rows="4" placeholder="e.g. 2 x 40FT container / month, target price, packaging preference..."></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-hc-primary w-100 py-3"><i class="bi bi-send-fill me-2"></i>Send Quotation Request</button>
+              <div id="q-savedNote" class="text-center small text-muted mt-2" style="display:none;"><i class="bi bi-cloud-check"></i> Draft restored from your last visit.</div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="hc-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="foot-brand mb-2"><i class="bi bi-house-door-fill me-2"></i>High Coco</div>
+        <p style="font-size:.9rem;">Premium coconut shell charcoal briquette manufacturer &amp; exporter from Indonesia — Sustainable, Consistent, Trusted Worldwide.</p>
+        <div class="mt-3">
+          <a href="https://instagram.com/highcoco.id" target="_blank" rel="noopener" class="social-round"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/628978781122" target="_blank" rel="noopener" class="social-round"><i class="bi bi-whatsapp"></i></a>
+          <a href="mailto:export@highcoco.id" class="social-round"><i class="bi bi-envelope-fill"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6>Quick Links</h6>
+        <a href="#about">About Us</a>
+        <a href="#process">Production Process</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#markets">Export Markets</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h6>Products</h6>
+        <a href="#products">Cube Briquettes</a>
+        <a href="#products">Finger Briquettes</a>
+        <a href="#products">Hexagonal Briquettes</a>
+        <a href="#products">Half Moon Briquettes</a>
+      </div>
+      <div class="col-lg-3">
+        <h6>Get in Touch</h6>
+        <a href="#quotation"><i class="bi bi-send-fill me-1"></i>Request Quotation</a>
+        <a href="catalog/High-Coco-Catalog.pdf" download><i class="bi bi-download me-1"></i>Download Catalog</a>
+        <a href="mailto:export@highcoco.id"><i class="bi bi-envelope me-1"></i>export@highcoco.id</a>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,.12); margin-top:2.2rem;">
+    <div class="text-center small" style="color:#9fac9a;">&copy; <span id="year"></span> High Coco / Highcoco.id — All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<div class="wa-quote-pop" id="waPop">
+  <p><strong>Quick Quote</strong><br>Send our default inquiry message straight to WhatsApp in one tap.</p>
+  <a href="#" id="waSendBtn" class="btn btn-sm btn-hc-primary w-100">Send message</a>
+</div>
+<a href="#" class="wa-float" id="waFloatBtn" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- Navbar scroll state ---------- */
+  const nav = document.getElementById('mainNav');
+  function onScroll(){
+    if(window.scrollY > 60){ nav.classList.add('scrolled'); } else { nav.classList.remove('scrolled'); }
+  }
+  window.addEventListener('scroll', onScroll); onScroll();
+
+  /* ---------- Reveal on scroll ---------- */
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  },{threshold:.15});
+  revealEls.forEach(el=>io.observe(el));
+
+  /* ---------- Offline / signal-lost banner ---------- */
+  function updateOnlineState(){
+    document.body.classList.toggle('offline', !navigator.onLine);
+  }
+  window.addEventListener('online', updateOnlineState);
+  window.addEventListener('offline', updateOnlineState);
+  updateOnlineState();
+
+  /* ---------- Product data + modal ---------- */
+  const PRODUCTS = {
+    cube:{ title:'Cube Briquettes', img:'images/cubebriket.JPG.PNG', fallback:'https://placehold.co/600x480/6B4226/f4efe6?text=Cube+Briquette',
+      desc:'Our best-selling shape for shisha and BBQ markets — uniform cubes that pack tightly, light evenly and burn with a long, stable ember.',
+      specs:['Size: 25mm / 26mm / 22mm','Moisture: ≤ 8%','Ash content: ≤ 2.8%','Burning time: 90–120 minutes','Packing: 1kg / 10kg box, 10kg master carton'] },
+    finger:{ title:'Finger Briquettes', img:'images/finger.JPG.PNG', fallback:'https://placehold.co/600x480/6B4226/f4efe6?text=Finger+Briquette',
+      desc:'An elongated stick shape popular for extended shisha sessions and lounges that want fewer refills per hour.',
+      specs:['Size: 60–90mm length','Moisture: ≤ 8%','Ash content: ≤ 2,8%','Burning time: 100–130 minutes','Packing: 1kg / 10kg box'] },
+    hex:{ title:'Hexagonal Briquettes', img:'images/hexagonal.JPG.JPG', fallback:'https://placehold.co/600x480/6B4226/f4efe6?text=Hexagonal+Briquette',
+      desc:'Hexagon geometry interlocks with minimal gaps, giving better container fill rate — a favourite among Middle East distributors.',
+      specs:['Size: 25mm across flats','Moisture: ≤ 8%','Ash content: ≤ 2.8%','Burning time: 90–120 minutes','Packing: 1kg / 10kg box'] },
+    halfmoon:{ title:'Half Moon Briquettes', img:'images/halfmoon.JPG.PNG', fallback:'https://placehold.co/600x480/6B4226/f4efe6?text=Half+Moon+Briquette',
+      desc:'A compact half-moon cut that ignites quickly, suited for buyers who prioritise fast start-up time.',
+      specs:['Size: Standard half-moon cut','Moisture: ≤ 8%','Ash content: ≤ 2,8%','Burning time: 80–110 minutes','Packing: 1kg / 10kg box'] }
+  };
+  const productModal = document.getElementById('productModal');
+  productModal.addEventListener('show.bs.modal', (ev)=>{
+    const trigger = ev.relatedTarget;
+    if(!trigger) return;
+    const key = trigger.getAttribute('data-product');
+    const p = PRODUCTS[key];
+    if(!p) return;
+    document.getElementById('pm-title').textContent = p.title;
+    const img = document.getElementById('pm-img');
+    img.src = p.img; img.alt = p.title;
+    img.onerror = function(){ this.onerror=null; this.src = p.fallback; };
+    document.getElementById('pm-desc').textContent = p.desc;
+    const specsEl = document.getElementById('pm-specs');
+    specsEl.innerHTML = p.specs.map(s=>`<li class="mb-1"><i class="bi bi-check2 text-success me-2"></i>${s}</li>`).join('');
+    try{
+      const recent = JSON.parse(localStorage.getItem('hc_recent_products')||'[]').filter(k=>k!==key);
+      recent.unshift(key);
+      localStorage.setItem('hc_recent_products', JSON.stringify(recent.slice(0,4)));
+    }catch(e){}
+  });
+
+  /* ---------- Gallery: build from production photos + lightbox ---------- */
+  const galleryPhotos = [
+    {src:'images/carbonisasi.JPG.PNG', alt:'Raw coconut shell material', fallback:'https://placehold.co/500x500/1F4D3A/f4efe6?text=Raw+Material'},
+    {src:'images/crusher.JPG.jpeg', alt:'Crushing machine', fallback:'https://placehold.co/500x500/1F4D3A/f4efe6?text=Crusher'},
+    {src:'images/mixing.JPG.jpeg', alt:'Mixer', fallback:'https://placehold.co/500x500/1F4D3A/f4efe6?text=Mixer'},
+    {src:'images/blanding.JPG.jpeg', alt:'Blending', fallback:'https://placehold.co/500x500/1F4D3A/f4efe6?text=Blending'},
+    {src:'images/hydraulicpres.JPG.jpeg', alt:'Hydraulic press / cetak', fallback:'https://placehold.co/500x500/1F4D3A/f4efe6?text=Cetak+Press'},
+    {src:'images/drying.JPG.jpeg', alt:'Drying', fallback:'https://placehold.co/500x500/1F4D3A/f4efe6?text=Drying'},
+    {src:'images/QCcontrol.JPG.PNG', alt:'Quality control lab', fallback:'https://placehold.co/500x500/1F4D3A/f4efe6?text=QC'},
+    {src:'images/packing.JPG.jpeg', alt:'Packing station', fallback:'https://placehold.co/500x500/1F4D3A/f4efe6?text=Packing'},
+    {src:'images/stuffing iran.JPG.jpeg', alt:'Container stuffing', fallback:'https://placehold.co/500x500/1F4D3A/f4efe6?text=Stuffing+Container'},
+    {src:'images/factory.JPG.jpeg', alt:'Factory front', fallback:'https://placehold.co/500x500/1F4D3A/f4efe6?text=Factory'}
+  ];
+  const galleryGrid = document.getElementById('galleryGrid');
+  galleryGrid.innerHTML = galleryPhotos.map(p=>`
+    <div class="gallery-item" data-full="${p.src}" data-fallback="${p.fallback}">
+      <img src="${p.src}" alt="${p.alt}" onerror="this.onerror=null;this.src='${p.fallback}';">
+    </div>`).join('');
+
+  const lbOverlay = document.getElementById('lightboxOverlay');
+  const lbImg = document.getElementById('lbImg');
+  galleryGrid.addEventListener('click', (e)=>{
+    const item = e.target.closest('.gallery-item');
+    if(!item) return;
+    const img = item.querySelector('img');
+    lbImg.src = img.src; lbImg.alt = img.alt;
+    lbOverlay.style.display = 'flex';
+  });
+  document.getElementById('lbClose').addEventListener('click', ()=> lbOverlay.style.display='none');
+  lbOverlay.addEventListener('click', (e)=>{ if(e.target===lbOverlay) lbOverlay.style.display='none'; });
+
+  /* ---------- Production process ember timeline scroll animation ---------- */
+  const steps = document.querySelectorAll('.process-step');
+  const progressBar = document.getElementById('emberProgress');
+  const processSection = document.getElementById('process');
+  let processLit = false;
+  function litSteps(fraction){
+    const total = steps.length;
+    const litCount = Math.round(fraction*total);
+    steps.forEach((s,i)=>{ s.classList.toggle('lit', i < litCount); });
+    progressBar.style.width = (fraction*100)+'%';
+  }
+  const procObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting && !processLit){
+        processLit = true;
+        let f = 0;
+        const timer = setInterval(()=>{
+          f += 1/steps.length;
+          litSteps(Math.min(f,1));
+          if(f>=1) clearInterval(timer);
+        }, 220);
+      }
+    });
+  },{threshold:.35});
+  procObserver.observe(processSection);
+
+  /* ---------- Floating WhatsApp quick quote ---------- */
+  const WA_NUMBER = '628978781122';
+  const WA_MESSAGE = 'Hello High Coco, I would like to request your latest quotation for Coconut Charcoal Briquettes.';
+  const waFloatBtn = document.getElementById('waFloatBtn');
+  const waPop = document.getElementById('waPop');
+  const waSendBtn = document.getElementById('waSendBtn');
+  waSendBtn.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_MESSAGE)}`;
+  waFloatBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    waPop.classList.toggle('show');
+  });
+  document.addEventListener('click', (e)=>{
+    if(!waPop.contains(e.target) && e.target!==waFloatBtn && !waFloatBtn.contains(e.target)){
+      waPop.classList.remove('show');
+    }
+  });
+
+  /* ---------- Quotation form: localStorage draft + submit handling ---------- */
+  const FORM_FIELDS = ['name','company','email','phone','country','product','message'];
+  const quoteForm = document.getElementById('quoteForm');
+  const savedNote = document.getElementById('q-savedNote');
+
+  try{
+    const saved = JSON.parse(localStorage.getItem('hc_quote_draft')||'null');
+    if(saved){
+      FORM_FIELDS.forEach(f=>{
+        const el = document.getElementById('q-'+f);
+        if(el && saved[f]) el.value = saved[f];
+      });
+      savedNote.style.display = 'block';
+    }
+  }catch(e){}
+
+  FORM_FIELDS.forEach(f=>{
+    const el = document.getElementById('q-'+f);
+    if(!el) return;
+    el.addEventListener('input', ()=>{
+      try{
+        const draft = JSON.parse(localStorage.getItem('hc_quote_draft')||'{}');
+        draft[f] = el.value;
+        localStorage.setItem('hc_quote_draft', JSON.stringify(draft));
+      }catch(e){}
+    });
+  });
+
+  quoteForm.addEventListener('submit', ()=>{
+    try{ localStorage.setItem('hc_quote_last_submitted', new Date().toISOString()); }catch(e){}
+    // Draft is intentionally kept in localStorage in case the redirect/send fails,
+    // so the buyer's information is never lost.
+  });
+
+  /* ---------- Leaflet map: High Coco factory location ---------- */
+  const map = L.map('map', { scrollWheelZoom:false }).setView([-7.706,110.817],16);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom:19,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-7.706,110.817])
+    .addTo(map)
+    .bindPopup('High Coco Factory<br>Jl.DK.PONGAN RT 04 / 05 PONDOK, GROGOL - SUKOHARJO, Central Java, Indonesia')
+    .openPopup();
+
+})();
+</script>
+</body>
+</html>
