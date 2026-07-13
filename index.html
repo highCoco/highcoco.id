@@ -968,12 +968,12 @@ footer.hc-footer .foot-brand{font-size:1.3rem; font-weight:800; color:#fff;}
   });
 
   /* ---------- Leaflet map: High Coco factory location ---------- */
-  const map = L.map('map', { scrollWheelZoom:false }).setView([-7.706,110.817],16);
+  const map = L.map('map', { scrollWheelZoom:false }).setView([-7.622729,110.804628],16);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom:19,
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
-  L.marker([-7.706,110.817])
+  L.marker([-7.622729,110.804628])
     .addTo(map)
     .bindPopup('High Coco Factory<br>Jl.DK.PONGAN RT 04 / 05 PONDOK, GROGOL - SUKOHARJO, Central Java, Indonesia')
     .openPopup();
